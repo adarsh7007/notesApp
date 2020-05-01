@@ -9,8 +9,7 @@ require("./model/Note");
 require("./model/User");
 
 app.use(bodyParser.json())
-
-app.use("/", require("./routes/user"));
+app.use("/notes", require("./routes/user"));
 
 app.listen(3000, function() {
   console.log("Server is running");

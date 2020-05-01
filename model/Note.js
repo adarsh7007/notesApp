@@ -2,16 +2,16 @@ const mongoose = require("mongoose");
 
 const NoteSchema = new mongoose.Schema(
   {
-    title: {
+    tittle: {
       type: String,
     },
     description: {
       type: String,
     },
-    user:[{
+    user:{
         type: mongoose.Schema.Types.ObjectId,
         ref: "User",
-      }]
+      }
   },
   {
     timestamps: true
